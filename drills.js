@@ -29,7 +29,21 @@ function max(numbers) {
     numbers.forEach(number => sum += number); 
     return sum / divisor; 
   }
+// function that multiplies a strin n number of times 
+// Has to be an annon function 
+function Hello(){
+    return 'Hello World ';  
+}
+function Goodbye(){ 
+    return 'Goodbye World '; 
+}
+const repeat = function newRepeat (string, n){
+    return string.repeat(n); 
+} 
+     
 
+
+console.log(repeat(Hello(), 5)); 
 
   
   
