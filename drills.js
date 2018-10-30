@@ -56,9 +56,7 @@ function filter(arr,fn) {
              
         }
     } 
-   // console.log(newArray)  
     return newArray;
-    
 }
 
 // DO NOT EDIT BETWEEN THESE LINES, BUT DO READ THE CODE ----->
