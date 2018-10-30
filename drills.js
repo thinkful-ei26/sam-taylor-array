@@ -53,7 +53,6 @@ function filter(arr,fn) {
     for ( let i = 0; i < arr.length; i++) {
         if (fn(arr[i][0]) === true) {
             newArray.push(arr[i]);
-             
         }
     } 
     return newArray;
@@ -76,5 +75,24 @@ const filteredNames = filter(myNames, function(name) {
 console.log(filteredNames) // => ['Rich', 'Ray']
 // <---- DO NOT EDIT BETWEEN THESE LINES
 
-  
-  
+function hazardWarningCreator(typeOfWarning){
+    let warningCounter = 0; 
+    return function(location){
+        warningCounter++; 
+        console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`); 
+        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+    }
+}
+const rocksWarning = hazardWarningCreator('Rocks on the Road');
+const stoneWarning = hazardWarningCreator('Stones on the Road');
+const brickWarning = hazardWarningCreator('Bricks on the Road');
+
+console.log(rocksWarning('Boom')); 
+console.log(rocksWarning('Bam')); 
+console.log(rocksWarning('BANG!'));  
+console.log(stoneWarning('bathroom'));
+console.log(stoneWarning('your house'));
+console.log(stoneWarning('your mommas house'));
+console.log(brickWarning('at church')); 
+console.log(brickWarning('at breakfast'));
+console.log(brickWarning('EVERYWHERE!'));
