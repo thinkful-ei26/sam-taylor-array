@@ -87,12 +87,56 @@ const rocksWarning = hazardWarningCreator('Rocks on the Road');
 const stoneWarning = hazardWarningCreator('Stones on the Road');
 const brickWarning = hazardWarningCreator('Bricks on the Road');
 
-console.log(rocksWarning('Boom')); 
-console.log(rocksWarning('Bam')); 
-console.log(rocksWarning('BANG!'));  
-console.log(stoneWarning('bathroom'));
-console.log(stoneWarning('your house'));
-console.log(stoneWarning('your mommas house'));
-console.log(brickWarning('at church')); 
-console.log(brickWarning('at breakfast'));
-console.log(brickWarning('EVERYWHERE!'));
+// console.log(rocksWarning('Boom')); 
+// console.log(rocksWarning('Bam')); 
+// console.log(rocksWarning('BANG!'));  
+// console.log(stoneWarning('bathroom'));
+// console.log(stoneWarning('your house'));
+// console.log(stoneWarning('your mommas house'));
+// console.log(brickWarning('at church')); 
+// console.log(brickWarning('at breakfast'));
+// console.log(brickWarning('EVERYWHERE!'));
+
+// let newTurtleArray = []; 
+// function newFunction(array){
+//     let newOption = [];  
+//     let i = 0;  
+//         // console.log(turtleArray[i]);
+//         if( array[i][0] >= 0){
+//             i++;
+//           newOption.push(array[i][0]); 
+//         //    console.log(newOption);
+//         }
+//         // if( turtleArray[i] >= 0){
+//         //     newOption.push(turtleArray[i]);  
+//         //   }
+//         console.log(newOption);
+     
+//     return newOption; 
+//     }
+let turtleArray = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+const forward = 0; 
+const right = 0;  
+const noNegatives = turtleArray.filter(num => num[0] >= 0 && num[1] >= 0).map(num => num[0] + num[1]).forEach((num, index) => console.log( `in the ${index +1} case, the turtle took ${num} steps.`) );   
+    console.log(noNegatives); 
+
+    
+
+
+
+// turtleArray.filter(arr => {
+//         let negativeArr = arr.filter(num => {
+//              return num < 0
+//         })
+//     return negativeArr.length === 0;
+//      })
+//   console.log(noNegatives);
+//     let shit = n + 1;
+//     console.log(key[shit]); 
+//    if(key[n] > 0){
+//        newTurtleArray += key[n]; 
+//    } 
+//    if (key[n] > 0){
+//        newTurtleArray += key[n]; 
+//    } })
+//    );
